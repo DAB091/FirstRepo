@@ -3,6 +3,7 @@
     src: url(../font/MonteCarlo-Regular.ttf);
 }
 
+/*Diseño menú, header y background*/
 .menu {
     font-size: 2vw;
     font-family: MonteCarlo-Regular;
@@ -45,7 +46,7 @@ body {
     background-size: center;
 }
 
-
+/*Paralax*/
 
 * {
     border: 0;
@@ -98,6 +99,8 @@ p {
     width: 90%
 }
 
+/*footer*/
+
 footer {
     font-family: 'Times New Roman', Times, serif;
     background-color: black;
@@ -105,7 +108,13 @@ footer {
     width: 100%;
 }
 
-/* Design */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+/* Diseño de Grid en Nosotros.HTML */
 *,
 *::before,
 *::after {
@@ -144,6 +153,7 @@ footer {
 }
 
 .card_content {
+    position:sticky;
     padding: 2rem;
     background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
 }
@@ -160,6 +170,8 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
+
+/* Media queries */
 
 @media screen and (max-width:1024px) {
     img.responsive {
@@ -193,24 +205,22 @@ img.responsive {
     }
 }
 
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-}
 
+/* Grid de Promociones.HTML */
 .promociones {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     grid-gap: 2rem;
 }
 
+/* Grid de Tratamientos.HTML */
 .Tratamientos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-gap: 2rem;
 }
 
+/* Diseño de Formulario */
 .form {
     width: 340px;
     height: 710px;
@@ -280,6 +290,7 @@ span {
     margin: 0 5px 0 15px
 }
 
+/* Efecto menú */
 .nav-wrapper {
     width: 100%;
 }
@@ -327,4 +338,51 @@ li {
 .menu a:hover:after {
     transform: rotate(-45deg);
     opacity: 0.7;
+}
+
+/* Booststrap hover - Zoom in */
+.imgcard {
+    width: 100%;
+    max-width: 420px;
+    opacity: 0.75;
+    overflow: hidden;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition-timing-function: ease-in;
+    transition: 1.5s;
+}
+
+.imgcard:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    transition-timing-function: ease-in;
+    transition: 1.5s;
+}
+.footer-item>h3>li>a:hover {    background-color: #B0B0B0;
+    color: red;
+
+}
+.button .wpcf7-submit {
+    background-image: linear-gradient(to right,#ff00cc 0%,#333399 51%,#ff00cc 100%);
+    background-size: 200% auto;
+    color: #ffffff !important;
+    border-radius: 25px;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none !important;
+    transition: 0.7s all;
+    -webkit-transition: 0.7s all;
+    margin-top: 14px;
+    display: inline-block;
+    width: 192px;
+    height: 40px;
+}
+.button .wpcf7-submit:hover{
+    background-position: right center;
+
 }
