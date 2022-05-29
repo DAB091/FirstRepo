@@ -1,0 +1,9 @@
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: #B0B0B0;
+    color: red;
+}
+
+.nav-wrapper>li>a:hover{
+    background-color: #B0B0B0;
+    color: red;
+}
