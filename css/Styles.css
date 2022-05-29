@@ -94,6 +94,9 @@ p {
 }
 
 .img-uno:hover {
+    background: linear-gradient(45deg,
+            rgba(29, 236, 197, 0.7),
+            rgba(91, 14, 214, 0.7) 100%);
     opacity: 1;
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
@@ -116,6 +119,9 @@ p {
 }
 
 .img-dos:hover {
+    background: linear-gradient(45deg,
+            rgba(29, 236, 197, 0.7),
+            rgba(91, 14, 214, 0.7) 100%);
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     -moz-transform: scale(1.25);
@@ -138,6 +144,9 @@ p {
 }
 
 .img-tres:hover {
+    background: linear-gradient(45deg,
+            rgba(29, 236, 197, 0.7),
+            rgba(91, 14, 214, 0.7) 100%);
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     -moz-transform: scale(1.25);
