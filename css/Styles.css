@@ -84,14 +84,68 @@ p {
 
 .img-uno {
     background-image: url('../img/Room.jpg');
+    width: 100%;
+    opacity: 0.75;
+    overflow: hidden;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition-timing-function: ease-in;
+    transition: 1.5s;
+}
+
+.img-uno:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    transition-timing-function: ease-in;
+    transition: 1.5s;
 }
 
 .img-dos {
-    background-image: url("../img/Facial.jpg")
+    background-image: url("../img/Facial.jpg");
+    width: 100%;
+    opacity: 0.75;
+    overflow: hidden;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition-timing-function: ease-in;
+    transition: 1.5s;
+}
+
+.img-dos:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    transition-timing-function: ease-in;
+    transition: 1.5s;
+
 }
 
 .img-tres {
-    background-image: url("../img/Tratamientocabello.JPG")
+    background-image: url("../img/Tratamientocabello.JPG");
+    width: 100%;
+    opacity: 0.75;
+    overflow: hidden;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition-timing-function: ease-in;
+    transition: 1.5s;
+}
+
+.img-tres:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    transition-timing-function: ease-in;
+    transition: 1.5s;
+
 }
 
 .texto {
@@ -153,7 +207,7 @@ footer {
 }
 
 .card_content {
-    position:sticky;
+    position: sticky;
     padding: 2rem;
     background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
 }
@@ -361,28 +415,4 @@ li {
     transform: scale(1.25);
     transition-timing-function: ease-in;
     transition: 1.5s;
-}
-.footer-item>h3>li>a:hover {    background-color: #B0B0B0;
-    color: red;
-
-}
-.button .wpcf7-submit {
-    background-image: linear-gradient(to right,#ff00cc 0%,#333399 51%,#ff00cc 100%);
-    background-size: 200% auto;
-    color: #ffffff !important;
-    border-radius: 25px;
-    font-weight: 400;
-    font-size: 14px;
-    text-transform: uppercase;
-    border: none !important;
-    transition: 0.7s all;
-    -webkit-transition: 0.7s all;
-    margin-top: 14px;
-    display: inline-block;
-    width: 192px;
-    height: 40px;
-}
-.button .wpcf7-submit:hover{
-    background-position: right center;
-
 }
