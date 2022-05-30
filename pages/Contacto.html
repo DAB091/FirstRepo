@@ -5,36 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/Styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/Styles.css">
+    <title>Contacto</title>
 </head>
 
 <body>
     <header>
         <h1 id="Grace">Centro integral de belleza Grace</h1>
-        <div id="menu"> Menu
-            <a href="../index.html">Inicio</a>
-            <a href="../pages/Tratamientos.html">Tratamientos</a>
-            <a href="../pages/Nosotros.html">Nosotros</a>
-            <a href="../pages/Contacto.html">Contacto</a>
-            <a href="../pages/Promociones.html">Promociones</a>
+        <div class="nav-wrapper">
+            <nav class="menu"> Menu
+                <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/Tratamientos.html">Tratamientos</a></li>
+                <li><a href="../pages/Nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/Contacto.html">Contacto</a></li>
+                <li><a href="../pages/Promociones.html">Promociones</a></li>
+            </ul>
+            </nav>
         </div>
     </header>
     <h3>Completa tus datos y recibe información sobre los turnos disponibles en los tratamientos seleccionados.</h3>
-    <form action="" method="" enctype="">
-        <label for="nombre">Escribe tu nombre</label><br>
-        <input type="text" name="" id="Nombre" placeholder="Nombre"><br>
-        <input type="email" name="" id="Email" placeholder="Email"><br>
-        <input type="text" name="" id="Asunto" placeholder="Asunto"><br>
-        <div>Elige el tratamiento deseado</div>
-        <label><input type="checkbox" name="Depilación definitiva">Depilación definitiva</label>
-        <label><input type="checkbox" name="Corte de pelo">Corte de pelo</label>
-        <label><input type="checkbox" name="Tatuaje">Tatuaje</label>
-        <label><input type="checkbox" name="Maquilladora">Maquilladora</label>
+    <form class="form" action="" method="" enctype="">
+        <h3>¡Contactanos!</h3>
+        <p type="Nombre"><input placeholder="Escribe tu nombre aquí"></input></p>
+        <p type="Email"><input placeholder="Dejanos tu correo para contactarte"></input></p>
+        <p type="Asunto"><input placeholder="¿Qué te gustaría decirnos?"></input></p>
+        <h3>Elige el tratamiento deseado</h3>
+        <p type="Depilación definitiva"><input type="checkbox"></input></p>
+        <p type="Corte de pelo"><input type="checkbox"></input></p>
+        <p type="Tatuaje"><input type="checkbox"></input></p>
+        <p type="Maquilladora"><input type="checkbox"></input></p>
         <div>
-            <input type="submit" value="Enviar">
+            <input class="send" type="submit" value="Enviar" >
             <input type="reset" value="Limpiar formulario">
         </div>
+        <section class="contenedor">
+            <span class="fa fa-phone"></span>3844 151515
+            <span class="fa fa-envelope-o"></span> contact@grace.com
+        </section>
     </form>
     <footer class="footer-grid">
         <div class="footer-item">
