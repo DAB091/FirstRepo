@@ -4,14 +4,13 @@
 }
 
 /*Diseño menú, header y background*/
-.menu {
+.nav {
     font-size: 2vw;
     font-family: MonteCarlo-Regular;
-    display: flex;
     list-style: none;
 }
 
-.menu a {
+.nav a {
     text-decoration: none;
     margin: 0rem 1rem;
     color: goldenrod;
@@ -399,8 +398,8 @@ li {
     position: relative;
 }
 
-.menu a:before,
-.menu a:after {
+.nav a:before,
+.nav a:after {
     content: "";
     width: 80px;
     height: 1px;
@@ -411,20 +410,20 @@ li {
     transition: all .4s;
 }
 
-.menu a:before {
+.nav a:before {
     left: calc(50% - 40px);
 }
 
-.menu a:after {
+.nav a:after {
     right: calc(50% - 40px);
 }
 
-.menu a:hover:before {
+.nav a:hover:before {
     transform: rotate(45deg);
     opacity: 0.7;
 }
 
-.menu a:hover:after {
+.nav a:hover:after {
     transform: rotate(-45deg);
     opacity: 0.7;
 }
