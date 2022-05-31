@@ -3,7 +3,7 @@
     src: url(../font/MonteCarlo-Regular.ttf);
 }
 
-/*Diseño menú, header y background*/
+/* ----------------------------------------------Diseño menú, header y background ----------------------------------------------*/
 .nav {
     font-size: 2vw;
     font-family: MonteCarlo-Regular;
@@ -45,7 +45,7 @@ body {
     background-size: center;
 }
 
-/*Paralax*/
+/* ----------------------------------------------Paralax ----------------------------------------------*/
 
 * {
     border: 0;
@@ -152,7 +152,7 @@ p {
     width: 90%
 }
 
-/*footer*/
+/* ----------------------------------------------footer ----------------------------------------------*/
 
 footer {
     font-family: 'Times New Roman', Times, serif;
@@ -167,7 +167,7 @@ footer {
     gap: 1rem;
 }
 
-/* Diseño de Grid en Nosotros.HTML */
+/* ---------------------------------------------- Diseño de Grid en Nosotros.HTML ---------------------------------------------- */
 *,
 *::before,
 *::after {
@@ -224,13 +224,6 @@ footer {
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 }
 
-/*
-.card_content {
-    position: sticky;
-    padding: 2rem;
-    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
-}*/
-
 .card_title {
     font-size: 1.1rem;
     font-weight: 700;
@@ -259,7 +252,7 @@ img {
     vertical-align: middle;
 }
 
-/* Media queries */
+/* ---------------------------------------------- Media queries ---------------------------------------------- */
 
 @media screen and (max-width:1024px) {
     img.responsive {
@@ -294,7 +287,7 @@ img.responsive {
 }
 
 
-/* Grid de Promociones.HTML */
+/* ---------------------------------------------- Grid de Promociones.HTML ---------------------------------------------- */
 .promociones {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
@@ -308,7 +301,7 @@ img.responsive {
     grid-gap: 2rem;
 }
 
-/* Diseño de Formulario */
+/*---------------------------------------------- Diseño de Formulario ---------------------------------------------- */
 .form {
     width: 340px;
     height: 710px;
@@ -378,7 +371,7 @@ span {
     margin: 0 5px 0 15px
 }
 
-/* Efecto menú */
+/*---------------------------------------------- Efecto menú ----------------------------------------------*/
 .nav-wrapper {
     width: 100%;
 }
@@ -428,7 +421,7 @@ li {
     opacity: 0.7;
 }
 
-/* Booststrap hover - Zoom in */
+/* ---------------------------------------------- Booststrap hover - Zoom in ----------------------------------------------*/
 .imgcard {
     width: 100%;
     max-width: 420px;
