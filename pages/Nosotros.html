@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">!-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/Styles.css">
     <title>Nosotros</title>
 </head>
@@ -51,10 +51,10 @@
         optio eius qui, incidunt officiis! Molestiae, earum ipsam.</p>
     <div class="main">
         <h2 id="Personal">¿Con que personal contamos a disposición?</h2>
-        <div class="container">
-            <div class="row">
+        <div class="container d-flex flex-wrap">
+            <div class="row ">
                 <!--Tarjeta 1-->
-                <div class="col-sm-1 col-md-3 col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card" style="width: 22rem;">
                         <img class="card-img-top" src="../img/peluquero.jpg" alt="peluquero">
                         <div class="card-body">
@@ -64,59 +64,50 @@
                     </div>
                 </div>
                 <!--Tarjeta 2-->
-                <article class="col-sm-1 col-md-3 col-lg-4">
+                <article class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card" style="width: 22rem;">
                         <img class="card-img-top" src="../img/consultora belleza.jpg" alt="consultora de belleza">
+                        <div class="card-body">
+                            <h5 class="card-title">Consultora de belleza</h5>
+                            <p class="card-text">Nuestras consultoras de belleza están al tanto sobre lo último en moda.
+                            </p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Consultora de belleza</h5>
-                        <p class="card-text">Nuestras consultoras de belleza están al tanto sobre lo último en moda.
-                        </p>
+                </article>
+                <!--Tarjeta 3-->
+                <article class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card" style="width: 22rem;">
+                        <img class="card-img-top" src="../img/tatuador.jpg" alt="tatuador">
+                        <div class="card-body">
+                            <h5 class="card-title">Peluquero</h5>
+                            <p class="card-text">Nuestros tatuadores cuentan con los mejores diseños para tu piel.</p>
+                        </div>
                     </div>
+                </article>
+                <!--Tarjeta 4-->
+                <article class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card" style="width: 22rem;">
+                        <img class="card-img-top" src="../img/esteticista.jpg" alt="esteticista">
+                        <div class="card-body">
+                            <h5 class="card-title">Esteticista</h5>
+                            <p class="card-text">Nuestras esteticistas utilizan la última tecnología para rejuvenecer tu
+                                piel.</p>
+                        </div>
+                    </div>
+                </article>
+                <!--Tarjeta 5-->
+                <article class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card" style="width: 22rem;">
+                        <img class="card-img-top" src="../img/Barberia.JPG" alt="peluquero">
+                        <div class="card-body">
+                            <h5 class="card-title">Barberia</h5>
+                            <p class="card-text">Nuestros barberos realizan los mejores cortes y peinados.
+                            </p>
+                        </div>
+                    </div>
+                </article>
             </div>
-            </article>
-            <!--Tarjeta 3-->
-            <article class="col-sm-1 col-md-3 col-lg-4">
-                <div class="card" style="width: 22rem;">
-                    <img class="card-img-top" src="../img/tatuador.jpg" alt="tatuador">
-                    <div class="card-body">
-                        <h5 class="card-title">Peluquero</h5>
-                        <p class="card-text">Nuestros tatuadores cuentan con los mejores diseños para tu piel.</p>
-                    </div>
-                </div>
-            </article>
-            <!--Tarjeta 4-->
-            <article class="col-sm-1 col-md-3 col-lg-4">
-                <div class="card" style="width: 22rem;">
-                    <img class="card-img-top" src="../img/esteticista.jpg" alt="esteticista">
-                    <div class="card-body">
-                        <h5 class="card-title">esteticista</h5>
-                        <p class="card-text">Nuestras esteticistas utilizan la última tecnología para rejuvenecer tu
-                            piel.</p>
-                    </div>
-                </div>
-            </article>
-            <!--Tarjeta 5-->
-            <article class="col-sm-1 col-md-3 col-lg-4">
-                <div class="card" style="width: 22rem;">
-                    <img class="card-img-top" src="../img/Barberia.JPG" alt="peluquero">
-                    <div class="card-body">
-                        <h5 class="card-title">Barberia</h5>
-                        <p class="card-text">Nuestros barberos realizan los mejores cortes y peinados.
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <!--Codigo Bootstrap JS-->
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-                integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-                integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-                crossorigin="anonymous"></script>
         </div>
-    </div>
-    </div>
     </div>
     <footer class="footer-grid">
         <div class="footer-item">
