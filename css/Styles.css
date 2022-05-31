@@ -93,9 +93,6 @@ p {
 }
 
 .img-uno:hover {
-    background: linear-gradient(45deg,
-            rgba(29, 236, 197, 0.7),
-            rgba(91, 14, 214, 0.7) 100%);
     opacity: 1;
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
@@ -118,9 +115,6 @@ p {
 }
 
 .img-dos:hover {
-    background: linear-gradient(45deg,
-            rgba(29, 236, 197, 0.7),
-            rgba(91, 14, 214, 0.7) 100%);
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     -moz-transform: scale(1.25);
@@ -143,9 +137,6 @@ p {
 }
 
 .img-tres:hover {
-    background: linear-gradient(45deg,
-            rgba(29, 236, 197, 0.7),
-            rgba(91, 14, 214, 0.7) 100%);
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     -moz-transform: scale(1.25);
@@ -194,18 +185,7 @@ footer {
     text-align: center;
 }
 
-/*
-.container {
-    display: grid;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    grid-gap: 2rem;
-    justify-content: space-around;
-    overflow: hidden;
-}
-*/
+
 .card {
     display: grid;
     display: sticky;
@@ -217,8 +197,12 @@ footer {
     background: linear-gradient(45deg,
             rgba(29, 236, 197, 0.5),
             rgba(91, 14, 214, 0.5) 100%);
+}*/
+.card-img-top {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    height: 20rem;
 }
-*/
 
 .card-img-top:hover {
     opacity: 1;
@@ -230,6 +214,7 @@ footer {
     transition-timing-function: ease-in;
     transition: 1.5s;
 }
+
 
 .card-body {
     position: sticky;
@@ -252,6 +237,16 @@ footer {
     letter-spacing: 1px;
     text-transform: capitalize;
     margin: 0px;
+}
+
+/*Diseño botones*/
+.btn-default {
+    background: #006EFF;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    font-size: 14px;
 }
 
 h5 {
