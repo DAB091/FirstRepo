@@ -1,0 +1,48 @@
+$gradiente1: linear-gradient(45deg,
+        rgba(29, 236, 197, 0.5),
+        rgba(91, 14, 214, 0.5) 100%);
+
+$BestSombrita: 0 0 40px -10px #000;
+
+$color-palette: (
+    primary: #00adef,
+    secondary: #ecba38,
+    success: #00bc34,
+    warning: #ec6038,
+    alert: #ef0035,
+);
+
+span {
+    &.primary {
+        color: map-get($color-palette, primary);
+    }
+
+    &.secondary {
+        color: map-get($color-palette, secondary);
+    }
+
+    &.success {
+        color: map-get($color-palette, success);
+    }
+
+    &.warning {
+        color: map-get($color-palette, warning);
+    }
+
+    &.alert {
+        color: map-get($color-palette, alert);
+    }
+}
+
+#limpiar {
+    @extend .send;
+
+    &:hover {
+        opacity: 1;
+        -moz-transform: scale(1.25);
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+        transition-timing-function: ease-in;
+        transition: 1.5s;
+    }
+}

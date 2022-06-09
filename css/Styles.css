@@ -50,6 +50,29 @@ li {
   float: left;
   position: relative; }
 
+span.primary {
+  color: #00adef; }
+
+span.secondary {
+  color: #ecba38; }
+
+span.success {
+  color: #00bc34; }
+
+span.warning {
+  color: #ec6038; }
+
+span.alert {
+  color: #ef0035; }
+
+#limpiar:hover {
+  opacity: 1;
+  -moz-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  transition-timing-function: ease-in;
+  transition: 1.5s; }
+
 @font-face {
   font-family: MonteCarlo-Regular;
   src: url(../font/MonteCarlo-Regular.ttf); }
@@ -293,7 +316,7 @@ input {
   input:focus {
     border-bottom: 2px solid #78788c; }
 
-.send {
+.send, #limpiar {
   float: right;
   padding: 8px 12px;
   margin: 8px 0 0;

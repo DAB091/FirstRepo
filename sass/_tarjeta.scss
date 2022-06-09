@@ -1,0 +1,11 @@
+@mixin tarjeta {
+    width: 100%;
+    max-width: 420px;
+    opacity: 0.75;
+    overflow: hidden;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition-timing-function: ease-in;
+    transition: 1.5s;
+
+}
