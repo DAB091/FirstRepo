@@ -1,69 +1,107 @@
 @charset "UTF-8";
+
 /* ----------------------------------------------Diseño menú, header y background ----------------------------------------------*/
 .nav {
   font-size: 2vw;
   font-family: MonteCarlo-Regular;
-  list-style: none; }
-  .nav a {
-    text-decoration: none;
-    margin: 0rem 1rem;
-    color: goldenrod; }
-    .nav a:before {
-      content: "";
-      width: 80px;
-      height: 1px;
-      background-color: #fff;
-      opacity: 0;
-      position: absolute;
-      top: 10px;
-      transition: all .4s;
-      left: calc(50% - 40px); }
-    .nav a:after {
-      content: "";
-      width: 80px;
-      height: 1px;
-      background-color: #fff;
-      opacity: 0;
-      position: absolute;
-      top: 10px;
-      transition: all .4s;
-      right: calc(50% - 40px); }
-    .nav a:hover:before {
-      transform: rotate(45deg);
-      opacity: 0.7; }
-    .nav a:hover:after {
-      transform: rotate(-45deg);
-      opacity: 0.7; }
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  margin: 0rem 1rem;
+  color: goldenrod;
+}
+
+.nav a:before {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+  transition: all .4s;
+  left: calc(50% - 40px);
+}
+
+.nav a:after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+  transition: all .4s;
+  right: calc(50% - 40px);
+}
+
+.nav a:hover:before {
+  transform: rotate(45deg);
+  opacity: 0.7;
+}
+
+.nav a:hover:after {
+  transform: rotate(-45deg);
+  opacity: 0.7;
+}
 
 .nav-wrapper {
-  width: 100%; }
+  width: 100%;
+}
 
 nav {
-  position: relative; }
+  position: relative;
+}
 
 ul {
   list-style-type: none;
   float: left;
-  position: relative; }
+  position: relative;
+}
 
 li {
   float: left;
-  position: relative; }
+  position: relative;
+}
 
 span.primary {
-  color: #00adef; }
+  color: #00adef;
+}
 
 span.secondary {
-  color: #ecba38; }
+  color: #ecba38;
+}
 
 span.success {
-  color: #00bc34; }
+  color: #00bc34;
+}
 
 span.warning {
-  color: #ec6038; }
+  color: #ec6038;
+}
 
 span.alert {
-  color: #ef0035; }
+  color: #ef0035;
+}
+
+/*Header fluid*/
+.fluid-width {
+  min-width: 200px;
+  display: inline-block;
+}
+
+.fixed-width {
+  width: 100px;
+  max-width: 100px;
+  min-width: 100px;
+  display: inline-block;
+}
+
+h2 {
+  display: inline;
+}
 
 #limpiar:hover {
   opacity: 1;
@@ -71,21 +109,25 @@ span.alert {
   -webkit-transform: scale(1.25);
   transform: scale(1.25);
   transition-timing-function: ease-in;
-  transition: 1.5s; }
+  transition: 1.5s;
+}
 
 @font-face {
   font-family: MonteCarlo-Regular;
-  src: url(../font/MonteCarlo-Regular.ttf); }
+  src: url(../font/MonteCarlo-Regular.ttf);
+}
 
 #Grace {
   font-size: 3vw;
   font-family: monteCarlo-Regular;
-  color: goldenrod; }
+  color: goldenrod;
+}
 
 h2 {
   font-family: montecarlo-regular;
   font-size: 4vw;
-  color: goldenrod; }
+  color: goldenrod;
+}
 
 header {
   background-image: url("../img/banner.JPG");
@@ -96,32 +138,42 @@ header {
   position: sticky;
   top: 0%;
   width: 100%;
-  z-index: 1111; }
+  z-index: 1111;
+}
 
 body {
   background-image: url("../img/body.JPG");
-  background-size: center; }
+  background-size: center;
+}
 
 * {
   border: 0;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
-  *::before {
-    box-sizing: border-box; }
-  *::after {
-    box-sizing: border-box; }
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+
+*::after {
+  box-sizing: border-box;
+}
 
 p {
   font-size: 1.4rem;
-  margin: 0 0 24px 0; }
-  p:before {
-    content: attr(type);
-    display: block;
-    margin: 28px 0 0;
-    font-size: 14px;
-    color: #5a5a5a; }
+  margin: 0 0 24px 0;
+}
+
+p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
 
 /* ----------------------------------------------Paralax ----------------------------------------------*/
 .parallax {
@@ -131,7 +183,8 @@ p {
   background-size: cover;
   height: 30rem;
   max-width: 100%;
-  position: relative; }
+  position: relative;
+}
 
 .texto-interior {
   color: #fff;
@@ -141,7 +194,8 @@ p {
   position: absolute;
   text-align: center;
   top: 40%;
-  width: 80%; }
+  width: 80%;
+}
 
 .img-uno {
   background-image: url("../img/Room.jpg");
@@ -151,16 +205,19 @@ p {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition-timing-function: ease-in;
-  transition: 1.5s; }
-  .img-uno:hover {
-    opacity: 1;
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    -moz-transform: scale(1.25);
-    -webkit-transform: scale(1.25);
-    transform: scale(1.25);
-    transition-timing-function: ease-in;
-    transition: 1.5s; }
+  transition: 1.5s;
+}
+
+.img-uno:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -moz-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  transition-timing-function: ease-in;
+  transition: 1.5s;
+}
 
 .img-dos {
   background-image: url("../img/Facial.jpg");
@@ -170,15 +227,18 @@ p {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition-timing-function: ease-in;
-  transition: 1.5s; }
-  .img-dos:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    -moz-transform: scale(1.25);
-    -webkit-transform: scale(1.25);
-    transform: scale(1.25);
-    transition-timing-function: ease-in;
-    transition: 1.5s; }
+  transition: 1.5s;
+}
+
+.img-dos:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -moz-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  transition-timing-function: ease-in;
+  transition: 1.5s;
+}
 
 .img-tres {
   background-image: url("../img/Tratamientocabello.JPG");
@@ -188,74 +248,88 @@ p {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition-timing-function: ease-in;
-  transition: 1.5s; }
-  .img-tres:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    -moz-transform: scale(1.25);
-    -webkit-transform: scale(1.25);
-    transform: scale(1.25);
-    transition-timing-function: ease-in;
-    transition: 1.5s; }
+  transition: 1.5s;
+}
+
+.img-tres:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -moz-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  transition-timing-function: ease-in;
+  transition: 1.5s;
+}
 
 .texto {
   padding: 5%;
-  width: 90%; }
+  width: 90%;
+}
 
 /* ----------------------------------------------footer ----------------------------------------------*/
 footer {
   font-family: 'Times New Roman', Times, serif;
   background-color: black;
   color: white;
-  width: 100%; }
+  width: 100%;
+}
 
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem; }
+  gap: 1rem;
+}
 
 .main {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 #personal {
   font-size: 24px;
   font-weight: 400;
-  text-align: center; }
+  text-align: center;
+}
 
 /* ---------------------------------------------- Diseño de Grid en Nosotros.HTML ---------------------------------------------- */
 .card {
   display: grid;
   display: sticky;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .card-img-top {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  height: 20rem; }
-  .card-img-top:hover {
-    opacity: 1;
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    -moz-transform: scale(1.25);
-    -webkit-transform: scale(1.25);
-    transform: scale(1.25);
-    transition-timing-function: ease-in;
-    transition: 1.5s; }
+  height: 20rem;
+}
+
+.card-img-top:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -moz-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  transition-timing-function: ease-in;
+  transition: 1.5s;
+}
 
 .card-body {
   position: sticky;
   padding: 2rem;
   background: linear-gradient(45deg, rgba(29, 236, 197, 0.5), rgba(91, 14, 214, 0.5) 100%);
   border-radius: 0.25rem;
-  box-shadow: 0 0 40px -10px #000; }
+  box-shadow: 0 0 40px -10px #000;
+}
 
 .card_title {
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: capitalize;
-  margin: 0px; }
+  margin: 0px;
+}
 
 /* ---------------------------------------------- Diseño botones ---------------------------------------------- */
 .btn-default {
@@ -264,34 +338,55 @@ footer {
   color: #fff;
   font-weight: 700;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
-  font-size: 14px; }
+  font-size: 14px;
+}
 
 h5 {
   font-family: montecarlo-regular;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 img {
   max-width: 100%;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 img.responsive {
-  width: auto; }
+  width: auto;
+}
 
 .promociones {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-  grid-gap: 2rem; }
+  grid-gap: 2rem;
+}
 
 /* ---------------------------------------------- Grid de Tratamientos.HTML ---------------------------------------------- */
 .Tratamientos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-  grid-gap: 2rem; }
+  grid-gap: 2rem;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /*---------------------------------------------- Diseño de Formulario ---------------------------------------------- */
 .form {
-  width: 340px;
-  height: 710px;
+  width: 600px;
+  height: 910px;
   background: #e6e6e6;
   border-radius: 8px;
   box-shadow: 0 0 40px -10px #000;
@@ -300,7 +395,8 @@ img.responsive {
   max-width: calc(100vw - 40px);
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  position: relative; }
+  position: relative;
+}
 
 input {
   width: 100%;
@@ -312,11 +408,15 @@ input {
   border: 0;
   font-family: 'Montserrat', sans-serif;
   transition: all .3s;
-  border-bottom: 2px solid #bebed2; }
-  input:focus {
-    border-bottom: 2px solid #78788c; }
+  border-bottom: 2px solid #bebed2;
+}
 
-.send, #limpiar {
+input:focus {
+  border-bottom: 2px solid #78788c;
+}
+
+.send,
+#limpiar {
   float: right;
   padding: 8px 12px;
   margin: 8px 0 0;
@@ -325,7 +425,8 @@ input {
   background: 0;
   color: #5a5a6e;
   cursor: pointer;
-  transition: all .3s; }
+  transition: all .3s;
+}
 
 .contenedor {
   content: 'Hi';
@@ -338,10 +439,12 @@ input {
   padding: 16px 4px 16px 0;
   border-radius: 6px;
   font-size: 13px;
-  box-shadow: 0 0 40px -10px #000; }
+  box-shadow: 0 0 40px -10px #000;
+}
 
 span {
-  margin: 0 5px 0 15px; }
+  margin: 0 5px 0 15px;
+}
 
 /* ---------------------------------------------- Booststrap hover - Zoom in ----------------------------------------------*/
 .imgcard {
@@ -352,32 +455,46 @@ span {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition-timing-function: ease-in;
-  transition: 1.5s; }
-  .imgcard:hover {
-    opacity: 1;
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    -moz-transform: scale(1.25);
-    -webkit-transform: scale(1.25);
-    transform: scale(1.25);
-    transition-timing-function: ease-in;
-    transition: 1.5s; }
+  transition: 1.5s;
+}
+
+.imgcard:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -moz-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  transition-timing-function: ease-in;
+  transition: 1.5s;
+}
 
 /* ---------------------------------------------- Media queries ---------------------------------------------- */
 @media screen and (max-width: 1024px) {
   img.responsive {
-    width: 200px; } }
+    width: 200px;
+  }
+}
 
 @media screen and (min-width: 1025px) {
   img.responsive {
-    width: 300px; } }
+    width: 300px;
+  }
+}
 
 @media screen and (min-width: 40rem) {
   .card {
-    width: 50%; }
+    width: 50%;
+  }
+
   .header {
-    width: 50%; } }
+    width: 50%;
+    height: 20%;
+  }
+}
 
 @media screen and (min-width: 56rem) {
   .card {
-    width: 33.3333%; } }
+    width: 33.3333%;
+  }
+}
