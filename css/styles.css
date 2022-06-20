@@ -75,7 +75,9 @@ span.alert {
 
 @media screen and (min-width: 320px) {
   ul > li > a {
-    font-size: 200%; } }
+    font-size: 200%; }
+  header {
+    height: fit-content; } }
 
 @media screen and (min-width: 720px) {
   ul > li > a {
