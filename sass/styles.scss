@@ -1,6 +1,8 @@
 @import "_nav";
 @import "_colores";
 @import "_tarjeta";
+@import "_fontsize";
+
 
 @font-face {
 	font-family: MonteCarlo-Regular;
@@ -9,16 +11,18 @@
 
 
 #Grace {
-	font-size: 3vw;
+	font-size: 3rem;
 	font-family: monteCarlo-Regular;
 	color: goldenrod;
 }
 
 h2 {
 	font-family: montecarlo-regular;
-	font-size: 4vw;
+	font-size: 2rem;
 	color: goldenrod;
 }
+
+
 
 header {
 	background-image: url("../img/banner.JPG");
@@ -177,7 +181,7 @@ footer {
 }
 
 #personal {
-	font-size: 24px;
+	font-size: 2rem;
 	font-weight: 400;
 	text-align: center;
 }
