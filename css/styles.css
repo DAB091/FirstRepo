@@ -219,6 +219,10 @@ span.alert {
   top: 4px;
   display: block; }
 
+@media screen and (min-width: 721px) {
+  .hamburger-checker {
+    visibility: hidden; } }
+
 @font-face {
   font-family: MonteCarlo-Regular;
   src: url(../font/MonteCarlo-Regular.ttf); }
