@@ -34,7 +34,9 @@
         transform: translateY(-130%);
         list-style: none;
         display: flex;
-        background-color: #e4f403;
+        background: linear-gradient(45deg,
+        rgba(29, 236, 197, 0.5),
+        rgba(91, 14, 214, 0.5) 100%);
         padding: 10px 20px;
         color: #212121;
         margin: 0;
