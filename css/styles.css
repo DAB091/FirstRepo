@@ -107,7 +107,7 @@ span.alert {
     z-index: 3; }
   .nav {
     flex-direction: column;
-    transform: translateY(-130%);
+    transform: translateY(-150%);
     list-style: none;
     display: flex;
     background: linear-gradient(45deg, rgba(29, 236, 197, 0.5), rgba(91, 14, 214, 0.5) 100%);
