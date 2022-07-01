@@ -34,9 +34,7 @@
         transform: translateY(-150%);
         list-style: none;
         display: flex;
-        background: linear-gradient(45deg,
-        rgba(29, 236, 197, 0.5),
-        rgba(91, 14, 214, 0.5) 100%);
+        background: lightblue;
         padding: 10px 20px;
         color: #212121;
         margin: 0;
@@ -98,6 +96,8 @@
 
 }
 .carousel-item>img {height: 100%;}
+
+.nav .nav-item {flex-direction: column;}
 
 @media screen and (min-width:721px) {
     .hamburger-checker {visibility: hidden;}

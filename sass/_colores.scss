@@ -12,27 +12,6 @@ $color-palette: (
     alert: #ef0035,
 );
 
-span {
-    &.primary {
-        color: map-get($color-palette, primary);
-    }
-
-    &.secondary {
-        color: map-get($color-palette, secondary);
-    }
-
-    &.success {
-        color: map-get($color-palette, success);
-    }
-
-    &.warning {
-        color: map-get($color-palette, warning);
-    }
-
-    &.alert {
-        color: map-get($color-palette, alert);
-    }
-}
 
 #limpiar {
     @extend .send;
