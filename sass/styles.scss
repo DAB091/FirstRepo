@@ -340,6 +340,16 @@ input {
 	color: #5a5a6e;
 	cursor: pointer;
 	transition: all .3s;
+	&:hover {
+        opacity: 1;
+        -moz-transform: scale(1.25);
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+        transition-timing-function: ease-in;
+        transition: 1.5s;
+		background-color: aquamarine;
+    }
+
 }
 
 .contenedor {
