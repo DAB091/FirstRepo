@@ -4,15 +4,6 @@ $gradiente1: linear-gradient(45deg,
 
 $BestSombrita: 0 0 40px -10px #000;
 
-$color-palette: (
-    primary: #00adef,
-    secondary: #ecba38,
-    success: #00bc34,
-    warning: #ec6038,
-    alert: #ef0035,
-);
-
-
 #limpiar {
     @extend .send;
 
